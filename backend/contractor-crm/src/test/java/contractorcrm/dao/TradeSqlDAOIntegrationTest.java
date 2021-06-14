@@ -50,10 +50,10 @@ public class TradeSqlDAOIntegrationTest {
 	}
 	
 	@Test
-	public void checkIfTradeExistsByName_returns_true() {
+	public void checkIfTradeExistsByName_returns_false() {
 		Trade testTradeObj = new Trade();
 		testTradeObj.setTradeName(CHECK_TRADE_NAME);
 		boolean tradeExists = dao.checkIfTradeExistsByName(testTradeObj);
-		Assert.assertTrue(tradeExists);
+		Assert.assertFalse(tradeExists);
 	}
 }
