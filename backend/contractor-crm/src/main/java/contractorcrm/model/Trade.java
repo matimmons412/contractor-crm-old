@@ -3,7 +3,7 @@ package contractorcrm.model;
 public class Trade {
 
 	private int tradeId;
-	private String trade;
+	private String tradeName;
 	
 	public int getTradeId() {
 		return tradeId;
@@ -13,12 +13,12 @@ public class Trade {
 		this.tradeId = tradeId;
 	}
 	
-	public String getTrade() {
-		return trade;
+	public String getTradeName() {
+		return tradeName;
 	}
 	
-	public void setTrade(String trade) {
-		this.trade = trade;
+	public void setTradeName(String trade) {
+		this.tradeName = trade;
 	}
 	
 }

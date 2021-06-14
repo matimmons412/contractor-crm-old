@@ -4,5 +4,6 @@ import contractorcrm.model.Trade;
 
 public interface TradeDAO {
 
-	void insertNewTrade(Trade trade);
+	int insertNewTrade(Trade trade);
+	boolean checkIfTradeExistsByName(Trade trade);
 }
